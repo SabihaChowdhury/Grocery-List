@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/notepad3"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edittext_name"
+        android:layout_width="match_parent"
+        android:hint="  Add a grocery item"
+        android:layout_height="40dp"
+        android:background="#f2ccc8"
+        />
+
+    <TextView
+        android:id="@+id/textview_amount"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
+        android:background="#f2ccc8"
+        android:textAlignment="center"
+        android:text="0"
+        android:textSize="45sp" />
+
+    <Button
+        android:id="@+id/button_decrease"
+        android:layout_width="50dp"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textview_amount"
+        android:layout_marginStart="63dp"
+        android:background="#f4ef9e"
+        android:text="-"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="63dp" />
+
+    <Button
+        android:id="@+id/button_increase"
+        android:layout_width="50dp"
+        android:layout_height="67dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textview_amount"
+        android:layout_marginEnd="86dp"
+        android:background="#f4ef9e"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="63dp"
+        android:layout_height="57dp"
+        android:background="#f4ef9e"
+        android:layout_alignBaseline="@+id/button_decrease"
+        android:layout_alignEnd="@+id/edittext_name"
+        android:text="add"
+        android:layout_marginStart="8dp"
+        android:layout_alignRight="@+id/edittext_name"
+        android:layout_marginLeft="8dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="372dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textview_amount"
+        android:layout_marginTop="6dp" />
+
+</RelativeLayout>
